@@ -1,4 +1,4 @@
-import {createParamDecorator, ExecutionContext} from '@nestjs/common';
+import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 
 export const RequestHeaders = createParamDecorator(
   async (property: string | number | symbol, ctx: ExecutionContext) => {

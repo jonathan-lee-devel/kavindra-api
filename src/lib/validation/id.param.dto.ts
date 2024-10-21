@@ -1,4 +1,4 @@
-import {IsDefined, IsNotEmpty, IsUUID} from 'class-validator';
+import { IsDefined, IsNotEmpty, IsUUID } from 'class-validator';
 
 export class IdParamDto {
   @IsDefined()

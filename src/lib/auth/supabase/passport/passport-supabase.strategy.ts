@@ -1,14 +1,14 @@
-import {Logger} from '@nestjs/common';
-import {createClient, SupabaseClient} from '@supabase/supabase-js';
-import {Request} from 'express';
+import { Logger } from '@nestjs/common';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import { Request } from 'express';
 import {
   SUPABASE_AUTH,
   SupabaseAuthStrategyOptions,
   SupabaseAuthUser,
   UNAUTHORIZED,
 } from 'nestjs-supabase-auth';
-import {JwtFromRequestFunction} from 'passport-jwt';
-import {Strategy} from 'passport-strategy';
+import { JwtFromRequestFunction } from 'passport-jwt';
+import { Strategy } from 'passport-strategy';
 
 export class SupabaseAuthStrategy extends Strategy {
   protected readonly logger = new Logger(SupabaseAuthStrategy.name);

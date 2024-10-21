@@ -1,8 +1,8 @@
-import {Injectable, OnModuleInit} from '@nestjs/common';
-import {ConfigService} from '@nestjs/config';
-import {createClient, SupabaseClient} from '@supabase/supabase-js';
+import { Injectable, OnModuleInit } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-import {EnvironmentVariables} from '../../../config/environment';
+import { EnvironmentVariables } from '../../../config/environment';
 
 @Injectable()
 export class SupabaseStorageService implements OnModuleInit {

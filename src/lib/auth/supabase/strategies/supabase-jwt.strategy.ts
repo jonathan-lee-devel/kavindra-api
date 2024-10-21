@@ -1,15 +1,15 @@
-import {Injectable} from '@nestjs/common';
-import {ConfigService} from '@nestjs/config';
-import {JwtService} from '@nestjs/jwt';
-import {PassportStrategy} from '@nestjs/passport';
-import {Request} from 'express';
-import {ParamsDictionary} from 'express-serve-static-core';
-import {UNAUTHORIZED} from 'nestjs-supabase-auth';
-import {ExtractJwt} from 'passport-jwt';
-import {ParsedQs} from 'qs';
+import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { JwtService } from '@nestjs/jwt';
+import { PassportStrategy } from '@nestjs/passport';
+import { Request } from 'express';
+import { ParamsDictionary } from 'express-serve-static-core';
+import { UNAUTHORIZED } from 'nestjs-supabase-auth';
+import { ExtractJwt } from 'passport-jwt';
+import { ParsedQs } from 'qs';
 
-import {EnvironmentVariables} from '../../../config/environment';
-import {SupabaseAuthStrategy} from '../passport/passport-supabase.strategy';
+import { EnvironmentVariables } from '../../../config/environment';
+import { SupabaseAuthStrategy } from '../passport/passport-supabase.strategy';
 
 @Injectable()
 export class SupabaseJwtStrategy extends PassportStrategy(
