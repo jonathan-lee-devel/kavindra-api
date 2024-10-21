@@ -15,7 +15,7 @@ export class SupabaseStorageService implements OnModuleInit {
   onModuleInit() {
     this.supabase = createClient(
       this.configService.getOrThrow<string>('SUPABASE_URL'),
-      this.configService.getOrThrow<string>('SUPABASE_SERVICE_KEY'),
+      this.configService.getOrThrow<string>('SUPABASE_SECRET_KEY'),
     );
   }
 

@@ -11,8 +11,8 @@ export type EnvironmentVariables = {
   STRIPE_WEBHOOK_URL: string;
   STRIPE_WEBHOOK_SECRET: string;
   SUPABASE_URL: string;
-  SUPABASE_KEY: string;
+  SUPABASE_PUBLIC_KEY: string;
   SUPABASE_JWT_SECRET: string;
-  SUPABASE_SERVICE_KEY: string;
+  SUPABASE_SECRET_KEY: string;
   RESEND_API_KEY: string;
 };

@@ -17,7 +17,7 @@ export class SupabaseStrategy extends PassportStrategy(
   public constructor(configService: ConfigService<EnvironmentVariables>) {
     super({
       supabaseUrl: configService.getOrThrow<string>('SUPABASE_URL'),
-      supabaseKey: configService.getOrThrow<string>('SUPABASE_KEY'),
+      supabaseKey: configService.getOrThrow<string>('SUPABASE_PUBLIC_KEY'),
       supabaseOptions: {},
       supabaseJwtSecret: configService.getOrThrow<string>(
         'SUPABASE_JWT_SECRET',

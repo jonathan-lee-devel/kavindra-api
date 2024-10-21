@@ -41,6 +41,9 @@ importers:
       '@prisma/client':
         specifier: 5.21.1
         version: 5.21.1(prisma@5.21.1)
+      '@supabase/storage-js':
+        specifier: ^2.7.1
+        version: 2.7.1
       '@supabase/supabase-js':
         specifier: ^2.45.6
         version: 2.45.6
